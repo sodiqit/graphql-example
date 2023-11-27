@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type PlaidLink {
+  link: String!
+}
+
+type Query {
+  sayHello: String!
+}
+
+type Mutation {
+  getPlaidLink(getPlaidLinkData: GetPlaidLink!): Boolean!
+}
+
+input GetPlaidLink {
+  bankName: String!
+}
+
+type Subscription {
+  plaidLinkCreated: PlaidLink!
+}
